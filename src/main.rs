@@ -1,10 +1,7 @@
+mod dir;
 
 fn main() {
     println!("Hello, world!");
-    let uid:u32;
-    unsafe {
-        uid = libc::getuid();
-    };
-
-    println!("{}",uid);
+    //dir::print_dir("/");
+    dir::read_file();
 }
