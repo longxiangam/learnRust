@@ -37,7 +37,7 @@ pub fn read_file(){
     if n > 0{
 
         unsafe {
-            let mut input_str = CStr::from_ptr((_buf.as_ptr() as *const c_char).try_into().unwrap()).to_string_lossy();
+            let input_str = CStr::from_ptr((_buf.as_ptr() as *const c_char).try_into().unwrap()).to_string_lossy();
             let mut input_str = input_str.to_string();
             input_str = input_str.replace("\n","") +"456";
             println!("输入：{}",input_str);
