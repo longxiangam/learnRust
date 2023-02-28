@@ -11,23 +11,22 @@ mod guess;
 
 
 fn main() {
-    println!("Hello, world!");
+
    /* dir::print_dir("/");
     dir::read_file();*/
-    let mut stdout = stdout();
-    stdout.write(readLine.as_bytes());
 
-    let i = 1;
+/*    let i = 1;
     let j = 1;
     for i in 1..10 {
         for j in i..10 {
             print!("{} * {} = {};  ",i,j,i * j);
         }
         println!("");
-    }
+    }*/
 
 
-    ptr::test_ptr();
+/*    ptr::test_ptr();
 
-    guess::start();
+    guess::start();*/
+    guess::four_color();
 }
