@@ -7,13 +7,13 @@ use std::thread::Thread;
 
 mod dir;
 mod ptr;
+mod guess;
+
 
 fn main() {
     println!("Hello, world!");
-    let stdin = stdin();
-    let mut readLine = String::new();
-    stdin.read_line(&mut readLine);
-
+   /* dir::print_dir("/");
+    dir::read_file();*/
     let mut stdout = stdout();
     stdout.write(readLine.as_bytes());
 
@@ -26,4 +26,8 @@ fn main() {
         println!("");
     }
 
+
+    ptr::test_ptr();
+
+    guess::start();
 }
