@@ -5,6 +5,7 @@
 use std::io::{Stdin, stdin, stdout, Write};
 use std::thread::Thread;
 
+#[cfg(not(target_os = "windows"))]
 mod dir;
 mod ptr;
 mod guess;
