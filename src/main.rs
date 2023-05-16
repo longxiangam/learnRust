@@ -4,12 +4,13 @@
 
 use std::io::{Stdin, stdin, stdout, Write};
 use std::thread::Thread;
+use common_lib::func;
+use macros::add;
 
 #[cfg(not(target_os = "windows"))]
 mod dir;
 mod ptr;
 mod guess;
-
 
 fn main() {
 
@@ -29,5 +30,6 @@ fn main() {
 /*    ptr::test_ptr();
 
     guess::start();*/
+
     guess::four_color();
 }

@@ -9,9 +9,15 @@ edition = "2021"
 libc = "0.2.139"
 nix = "0.26.2"
 rand = "0.8.5"
+common_lib = {path= "common_lib" }
+macros = {path="macros"}
+
 
 
 [workspace]
 members = [
-    "thread_safe"
+    "thread_safe",
+    "axum_web",
+    "common_lib",
+    "macros"
 ]
