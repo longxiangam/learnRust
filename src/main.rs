@@ -4,8 +4,7 @@
 
 use std::io::{Stdin, stdin, stdout, Write};
 use std::thread::Thread;
-use common_lib::func;
-use macros::add;
+use common_lib::nice;
 
 #[cfg(not(target_os = "windows"))]
 mod dir;
@@ -30,6 +29,11 @@ fn main() {
 /*    ptr::test_ptr();
 
     guess::start();*/
+    let a= 1;
+    nice!(a);
+    nice!(1);
+    stringify!(a);
+    dbg!("{}",a);
 
-    guess::four_color();
+    //guess::four_color();
 }

@@ -1,10 +1,17 @@
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
+#[macro_export]
+macro_rules! nice{
+     ($x: ident)=>{
+        println!("ident:{}",stringify!($x));
+    };
+    ($x:expr) => {
+        println!("express:{}",$x);
+    };
 
-pub mod macros{
-   pub use crate::add;
 }
+
 #[cfg(test)]
 mod tests {
     use super::*;

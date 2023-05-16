@@ -1,3 +1,5 @@
+pub use macros::*;
+
 pub fn func(left: usize, right: usize) -> usize {
     left + right
 }
